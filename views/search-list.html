@@ -1,0 +1,42 @@
+<!--
+
+*File Name: search-list.html
+*Description: Search list screen
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran Raja
+*Creation Date: 08 Februrary, 2018
+
+-->
+
+<!-- When there is more then 4 results in the list, add class "with-scroll" to the below div. 
+This class will handle UI changes when there is a scrollbar -->
+
+<div class="search-list screen">
+
+    <!-- HEADER -->
+    <div class="header lineseprator searchHeaderTitle">
+        <div id="search-title" class="search-title font30 twoRow">
+            <span></span>
+        </div>
+        
+        
+    </div>
+
+    <!-- SEARCH LIST 
+    The class "at-top" will disable the top chevron and "at-bottom" will disable the bottom chevron. 
+    By default when we load the screen, top chevron will be disabled and hence we already applied class "at-top" -->
+    <div id="list-container" class="scroll-container content at-top">
+
+        <!-- Custom Chevrons  -->
+        <div class="searchListChevron-up icon"></div>
+        <div class="chevron-down icon"></div>
+        <!--End Chevrons-->
+
+        <div class="list">
+            <ul id = "search-list" class="scroll"></ul>
+        </div>
+    </div>
+</div>
+
+

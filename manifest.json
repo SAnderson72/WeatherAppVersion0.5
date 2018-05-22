@@ -1,0 +1,54 @@
+{
+   "name": "Weather",
+   "uuid": "550e8400-e29b-41d4-a716-446655444999",
+   "version": "20.28",
+   "build_version": "3.0.8",
+   "manifest_version": "1.0",
+   "application_type": "CI_CE_APP",
+   "description": "Weather application redesign",
+   "icons": {
+      "footer-active" : "res/appIcon.png",
+      "footer-inactive" : "res/appIcon.png"
+   },
+   "regions": [
+      "GB"
+   ],
+   "languages": [
+      "en"
+   ],
+   "default_locale": 
+      "en",
+   "permissions": [
+      "navi_access",
+      "vehicle_access",
+      "app_update_event",
+      "get_day_night",
+      "get_vehicle_info",      
+      "get_destination_and_eta",
+      "get_destination",
+      "get_current_location",
+      "get_CCF_ci_config",
+      "get_user_setting",
+      "get_app_info",
+	  "internet_connectivity",
+      "get_connectivity_status",
+      "launch_app",
+      "send_event",
+      "send_event_response"
+   ],
+   "background": {
+   "enabled": false
+   },
+   "requirements": {
+    "user_profile": "optional"
+   },
+   "events":[
+      {"action":"app_show", "filter":"Weather"},
+      {"action":"app_start", "filter":"Weather"}
+   ],
+   "position": 1,
+   "min_log_level": {
+    "dlt": "trace",
+    "offboard": "fatal"
+   }
+}

@@ -1,0 +1,160 @@
+/*.view {
+    margin: 0 24px 0 26px;
+}*/
+.sidebar {
+    float: right;
+    margin-right: 0px;
+    width: 194px;
+}
+.locationName {
+    width: 370px;
+    text-align: left;
+    top: 36px;
+    float: right;
+    margin: 0 10px 0 0;
+}
+.header .icon, .icon i{
+    float: right;
+}
+.updateTxt, .weatherStatus {
+    text-align: right;
+    margin-left: 86px;
+}
+.updateTxt {
+    margin-left: 31px;
+}
+#currLocRefIcon.icon, .content_left {
+    float: right;
+}
+#favIcon{
+    float: left;
+}
+#mainView.main{
+	margin-left: 0px;
+    float: left;
+    /*right: 41px;*/
+}
+.main .header .title{
+    margin: 0 0 0 18px;
+    text-align: right;
+}
+.content_right .minTemp, .content_right .maxTemp {
+    text-align: left;
+    margin-left: 20px;
+    width: 56px;
+}
+.forecast-page #mainView.main{
+    right: 0px;
+}
+.main .searchHeaderTitle{
+	margin-left: 90px;
+}
+.searchHeaderTitle:after {
+    left: 76px !important;
+    width: 457px;
+}
+.search-title {
+    width: 476px;
+    margin-left: 0px;
+}
+.main .with-out-scroll .searchHeaderTitle{
+    margin-left: 14px;
+}
+.scroll-container .icon {
+    left: 0;
+    right: auto;
+}
+#list-container.scroll-container .icon {
+left: 0px;
+}
+.scroll-container .favselected, #favourite-list .scroll .update{
+    left: 0;
+}
+.scroll-container .list, .scroll-container .legal-information {
+    direction: rtl;
+}
+#mainView.searchListPage{
+	margin-left: 0px;
+}
+.list li.scrollListElement {
+    margin-left: 0px;
+    width: 100%;
+}
+.main .searchHeaderTitleScroll:after {
+    left: 0px !important;
+    width: 100%;
+}
+.titleScreen_theme_NoPanel:before, .titleScreen_theme:before,.titleScreen_theme_NoPanel:before, .fog_theme:before, .hazy_theme:before, .icy_theme:before, .wind_theme:before, 
+.snow_theme:before, .showers_theme:before, .sunny_theme:before, .clear_night_theme:before, .partly_sunny_theme:before, .overcast_theme:before, .thundershowers_theme:before, 
+.moon_cloud_theme:before, .moon_hazy_theme:before, .hail_theme:before, .genericImg:before,.thundershowers_theme_dest:before,.fog_theme_dest:before,.hazy_theme_dest:before,
+.icy_theme_dest:before,.wind_theme_dest:before,.snow_theme_dest:before,.showers_theme_dest:before,.sunny_theme_dest:before,.clear_night_theme_dest:before,.partly_sunny_theme_dest:before,
+.overcast_theme_dest:before,.moon_cloud_theme_dest:before,.moon_hazy_theme_dest:before,.hail_theme_dest:before{
+   -moz-transform: scaleX(-1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        width: 100%;
+        height: 100%;
+}
+.content {
+    margin-top: 0px;
+}
+.content_right_dest_bg{
+    margin-left: 11px;
+}
+.setting-overLay {
+    left: auto;
+    right: 0;
+}
+#Hourly{
+    float: right;
+}
+#Hourly ul {
+margin: 0px;
+padding: 0px;
+float: right;
+}
+#Hourly ul li {
+float: right;
+}
+#Hourly ul li:first-child:after {
+left: 646px;
+right: 0;
+}
+#Hourly ul li:last-child:after {
+left: 531px;
+right: 0;
+}
+.sliding-container{
+    float: right;
+}
+.sliding-container > div {
+    float: right;
+}
+#forecastlocation-name.locationName {
+float: right;
+text-align: left;
+margin-left: 0;
+}
+.list .loc-temp, .list .loc-fahren{
+    /*margin-left: -5%;*/
+}
+
+.list .loc-data{
+    text-align: left;
+}
+.scroll-container .legal-information .scroll {
+    direction: ltr;
+}
+.main-wrapper{
+float: left;
+}
+.nodestination{
+    margin-left: 19px;
+}
+.arabicFont .updateTxt, .arabicFont .main .header .title span{
+    direction: rtl;
+    text-align: right;
+}

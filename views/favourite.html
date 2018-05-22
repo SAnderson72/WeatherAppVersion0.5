@@ -1,0 +1,39 @@
+<!--
+
+*File Name: favourite.html
+*Description: Weather favourite screen
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran R
+*Creation Date: 13 February, 2018
+*Modification Records:
+
+-->
+
+<!-- No Favourite Section -->
+<div id="noFav" class="noFavorite" style="display:none">
+	    <!-- No Favourite icon and text message -->
+    	<div class="noFavIcon icon"><i></i></div>
+    	<div class="noFavMessage font30"><p id ="noFavMsgTxt"></p></div>
+</div>
+
+
+<!-- Favourite Section -->
+<div id="favourite-list" class="favourite-list screen" style="display:none">
+
+	<!-- Favourite LIST 
+    The class "at-top" will disable the top chevron and "at-bottom" will disable the bottom chevron. 
+    By default when we load the screen, top chevron will be disabled and hence we already applied class "at-top" -->
+    <div id="list-container" class="scroll-container fav-container content at-top">
+
+        <!--  Custom Chevrons   -->
+        <div class="chevron-up icon"></div>
+        <div class="chevron-down icon"></div>
+        <!-- End Chevrons -->
+
+        <div class="list fav-list">
+            <ul id ="fav-list" class="scroll"></ul>
+        </div>
+    </div>
+
+</div>

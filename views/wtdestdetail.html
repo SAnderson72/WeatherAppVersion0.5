@@ -1,0 +1,61 @@
+<!--
+
+*File Name: wtdestdetail.html
+*Description: Weather Destination screen
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran Raja
+*Creation Date: 30 Jan, 2018
+
+-->
+
+
+<div class="wt-info screen">
+	<!-- Header -->
+	<div class="header lineseprator">
+		<div id="currLocRefIcon" class="icon update" onmousedown="WT.Global.clickLocationRefreshIcon()"><i></i></div>	
+		<div id="location-name" class="locationName twoRow font30">
+			<span id ="locationSpan"></span>
+		</div>
+		<div id="favIcon" class="icon nonfav" onmousedown="WT.Global.clickFavIcon(this)"><i></i></div>	  
+ 	</div>
+ 	
+ 	<!-- Update Section -->
+ 	<div id="update" class="updateTxt">
+ 		<span id="updateSpan"></span>
+    </div>
+
+    <!-- Destination Data Section -->
+    <div class="content" onclick ="WT.Global.locationForecastClick()">
+	 	<div class="content_left_dest content_left_dest_bg">
+	 		<!-- Destination Now Text -->	
+	 		<div id="Now" class="updateTxt_dest">
+	 			<span id ="nowSpan"></span>
+	    	</div>
+	 		<!-- Destination Icon and Temperature -->	
+	    	<div class="startDestTemp">
+		 		<div id="destThemeIcon" class="startDestTempLeft"></div>
+		 		<div id="currentTemp" class="startDestTempRight"></div>
+		 	</div>
+			<!-- Destination Weather Status -->	
+	 		<div id="weatherStatus" class="weatherStatus_dest">
+	 			<span><span>
+	 		</div>
+	 	</div>
+		<div class="content_left_dest content_right_dest_bg"> 
+	 		<!-- Destination Arrival Text and Icon -->	
+	 		<div id="Arrival" class="updateTxt_dest">
+	 			<div class="flag"></div><span id ="ArrivalSpan"></span>
+	    	</div>
+	 		<!-- Destination Icon and Temperature -->	
+	 		<div class="startDestTemp">
+	 		<div id="destArriveThemeIcon" class="startDestTempLeft"></div>		
+	 		<div id="currentTemp_arrival" class="startDestTempRight"></div>
+	 		</div>
+			<!-- Destination Weather Status -->
+		 	<div id="weatherStatus_arrival" class="weatherStatus_dest">
+	 			<span><span>
+	 		</div>
+	 	</div>
+	</div>
+ </div>

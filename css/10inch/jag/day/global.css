@@ -1,0 +1,74 @@
+@import url("../../icons/dayIcon.css");
+
+body:after {
+    content: url('../../../../res/title_day_theme_10.jpg') url('../../../../res/bg/Foggy_Light_Theme.jpg') url('../../../../res/bg/Hazy_Light_Theme.jpg') url('../../../../res/bg/Icy_Light_Theme.jpg') url('../../../../res/bg/Windy_Light_Theme.jpg') url('../../../../res/bg/Snow_Light_Theme.jpg') url('../../../../res/bg/Rain_Light_Theme.jpg') url('../../../../res/bg/Sunny_Light_Theme.jpg') url('../../../../res/bg/ClearNight_Light_Theme.jpg') url('../../../../res/bg/SunnyCloud_Light_Theme.jpg') url('../../../../res/bg/Overcast_Light_Theme.jpg') url('../../../../res/bg/Lightning_Light_Theme.jpg') url('../../../../res/bg/MoonCloud_Light_Theme.jpg') url('../../../../res/bg/MoonHazy_Light_Theme.jpg') url('../../../../res/bg/Hail_Light_Theme.jpg');
+}
+
+.reaction-area.active, .tabreaction-area.active {
+    background-image: url('../../../../res/10inch/day/jag/button_reaction_state.png');
+}
+.my-location.selected div, .favourite.selected div, .destination.selected div,.search.selected div, #twentyFourHourTab.selected div, #fiveDayTab.selected div{
+    background-image: url('../../../../res/10inch/day/jag/j_day_selected.png');
+}
+.reaction-area.active, .my-location.selected div, .favourite.selected div,.search.selected div, .destination.selected div {
+	color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+.icon.active, .favIcons, .icon:active {
+    background: url('../../../../res/10inch/j_icon_glow.png');
+}
+.active-element .reaction-area, .reaction-area.active, #fav-list .active-element {
+    background-image: url('../../../../res/10inch/day/jag/button_reaction_state.png');
+}
+
+/********scroll icon***********/
+.scroll-container .chevron-up, .scroll-container .searchListChevron-up {
+    background-image: url('../../../../res/10inch/day/arrow_up.png');
+}
+.chevron-up.active-icon, .searchListChevron-up.active-icon {
+    background-image: url('../../../../res/10inch/night/jag/arrow_up_active.png');
+}
+.at-top .chevron-up, .at-top .searchListChevron-up {
+    background-image: url('../../../../res/10inch/day/arrow_up_inactive.png');
+}
+.scroll-container .chevron-down {
+    background-image: url('../../../../res/10inch/day/arrow_down.png');
+}
+.chevron-down.active-icon {
+    background-image: url('../../../../res/10inch/night/jag/arrow_down_active.png');
+}
+.at-bottom .chevron-down {
+    background-image: url('../../../../res/10inch/day/arrow_down_inactive.png');
+}
+.scroll-container .list::-webkit-scrollbar-thumb:vertical,
+.scroll-container .legal-information::-webkit-scrollbar-thumb:vertical{
+    background: url('../../../../res/scroll_thumb_jag_top.png') top left no-repeat, url('../../../../res/scroll_thumb_jag_bottom.png') bottom left no-repeat;
+    background-color: #00a5d8;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+.at-top.scroll-container .list::-webkit-scrollbar-thumb:vertical,
+.at-top.scroll-container .legal-information::-webkit-scrollbar-thumb:vertical{
+    background: url('../../../../res/scroll_thumb_jag_top_day.png') top left no-repeat, url('../../../../res/scroll_thumb_jag_bottom.png') bottom left no-repeat;
+    background-color: #00a5d8;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+.at-bottom.scroll-container .list::-webkit-scrollbar-thumb:vertical,
+.at-bottom.scroll-container .legal-information::-webkit-scrollbar-thumb:vertical{
+    background: url('../../../../res/scroll_thumb_jag_top.png') top left no-repeat, url('../../../../res/scroll_thumb_jag_bottom_day.png') bottom left no-repeat;
+    background-color: #00a5d8;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+
+
+
+/*Search list*/
+.search-title,.changeRain .changeRainValue, .cloudDetail .cloudDetailValue, .visDetail .visDetailValue, .updateTxt_dest span {
+    color: rgb(0,117,153);
+}
+.rotate:active,
+.rotate.active  {
+    background: none;
+}

@@ -1,0 +1,86 @@
+<!--
+
+*File Name: index.html
+*Description: Base template for application
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran Raja
+*Creation Date: 11 January, 2018
+*
+*Modification Records:
+
+*
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+        <title>Weather</title>
+
+        <!-- jQuery Libraries -->
+        <script src="/afw/jQuery/jquery-latest.js"></script>
+
+        <!-- CI UI Elements libraries -->
+        <script src="/afw/lib/i18next/i18next-1.10.1.min.js"></script>
+        <script src="/afw/Log4js/log4javascript.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/afw/Utils/Defines.js"></script>
+        <script src="/afw/Utils/DataStorage.js"></script>
+        <script src="/afw/System/Core.js"></script>
+        <script src="/afw/UI/Common/js/CI_Popups.js"></script>        
+        <script src="/afw/System/Notifier.js"></script>
+        <script src="/afw/Utils/Logger.js"></script>
+        <script src="/afw/UI/ThemeManager/ThemeManager.js"></script>
+        <script src="/afw/Utils/Localization.js"></script>
+        <script src="/afw/lib/greensock/TimelineMax.min.js"></script>
+        <script src="/afw/lib/greensock/TweenMax.min.js"></script>
+        <script src="/afw/lib/greensock/utils/Draggable.min.js"></script>
+        <script src="/afw/UI/Common/js/CI_Header.js"></script>
+        <script src="/afw/Utils/Error.js"></script>
+        <script src="/afw/Vehicle/Navi.js"></script>
+        <!-- WT Script Files -->
+        <script src="js/constants.js"></script>
+        <script src="js/modules/services/afw.js"></script>        
+        <script src="js/global.js"></script>
+        <script src="js/app-launch.js"></script>
+        <script src="js/modules/services/auto-update.js"></script>
+        <script src="js/modules/services/favorite-handler.js"></script>
+        <script src="js/route.js"></script>
+		<script src="js/footer-handler.js"></script>
+        <script>
+            WT.Launch.triggerLazyLoad();
+        </script>
+    </head>
+    <body>
+    <div id="loadingBg" class="loadingBg" style="display: none;"></div>
+        <div id="container" class="container background"><!-- For generic screen the class will be 'background' and for all other screens 'background-blur' -->
+            <div id="view" class="view"><!-- WT view port -->
+                <div class="sidebar"><!-- WT sidebar with icons -->
+                    <ul>
+                        <li id="nav-myloc" class="my-location" onmousedown="WT.Sidemenu.curLocClick()">
+                            <div class="reaction-area" id="mylocBtn"><span id="mylocBtnSpan"></span></div>
+                        </li>
+                        <li id="nav-fav" class="favourite" onmousedown="WT.Sidemenu.favoriteClick()">
+                            <div class="reaction-area" id="favBtn"><span id="favBtnSpan"></span></div>
+                        </li>
+                        <li id="nav-find" class="search" onmousedown="WT.Sidemenu.searchClick()">
+                            <div class="reaction-area" ><span id="findBtnSpan"></span></div>
+                        </li>
+                        <li id="nav-dest" class="destination" onmousedown="WT.Sidemenu.destinationClick()">
+                            <div class="reaction-area"><span id="destnSpan"></span></div>
+						</li>
+                    </ul>
+                </div><!-- End sidebar -->
+                <div class="main-wrapper">
+                     <div id="mainView" class="main"><!-- Main content area for the app -->
+                        <!-- different Screens will be added here -->
+                    </div>
+                </div>
+            </div>
+            <!--END view -->
+        </div>
+    </body>
+</html>

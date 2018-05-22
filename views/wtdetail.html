@@ -1,0 +1,43 @@
+<!--
+
+*File Name: wtdetail.html
+*Description: Weather Location screen
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran Raja
+*Creation Date: 30 Jan, 2018
+
+-->
+
+<div class="wt-info screen">
+	<!-- Header -->
+	<div class="header lineseprator">
+		<div id="currLocRefIcon" class="icon update" onmousedown="WT.Global.clickLocationRefreshIcon()"><i></i></div>	
+		<div id="location-name" class="locationName font30 twoRow">
+			<span id="locationSpan"></span>
+		</div>
+		<div id="favIcon" class="icon nonfav" onmousedown="WT.Global.clickFavIcon(this)"><i></i></div>	  
+ 	</div>
+
+ 	<!-- Update Section -->
+ 	<div id="update" class="updateTxt">
+ 		<span id ="updateSpan"></span>
+    </div>
+
+ 	<!-- Location Data Section -->
+ 	<div class="content" onclick ="WT.Global.locationForecastClick()">
+ 		<!-- Location icon -->	
+ 		<div id="themeImage" class="content_left"></div>
+ 		<!-- Location Min and Max Temperature -->	
+ 		<div class="content_right">
+ 			<div id="minTemp" class="minTemp font30"></div>
+ 			<div id="maxTemp" class="maxTemp font30"></div>
+ 			<div id="currentTemp" class="currentTemp"></div>
+ 		</div>
+ 		<!-- Location Weather Status -->	
+ 		<div id="weatherStatus" class="weatherStatus">
+ 			<span><span>
+ 		</div>
+ 	</div>
+
+</div>

@@ -1,0 +1,1617 @@
+/*
+
+*File Name: global.css
+*Description: CSS file for 10inch version
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Srejith P
+*Creation Date: 13 January, 2018
+
+*/
+
+body {
+    margin: 0;
+    font-size: 22px;
+    height: 400px;
+    display: inline;
+    background: #000;
+}
+body:after{
+    display: inline-block;
+    position: absolute; 
+    width: 0; 
+    height: 0; 
+    overflow: hidden; 
+    z-index: -1;
+}
+ul,li,p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.rotate i {
+    -webkit-animation: rotateit 0.7s linear infinite;
+    }
+    @-webkit-keyframes rotateit {
+    from {
+        -webkit-transform: rotate(0deg);
+        -webkit-transform-origin: 50% 50%;
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -webkit-transform-origin: 50% 50%;
+    }
+}
+
+.font30{
+    font-size: 30px;
+}
+.twoRow{
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    float: left;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    top: 40px;
+}
+
+
+/* Page loading animation
+==============================================================================*/
+.loadingBg {
+    height: 400px;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 200;
+}
+.full-loading {
+    left: 0;
+}
+.partial-loading {
+    left: 108px;
+}
+.loadingBgGradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: repeat-x;
+}
+.loading {
+    width: 89px;
+    height: 50px;
+    position: relative;
+    z-index: 999;
+    margin: 177px 0 0 400px;
+}
+.partial-loading .loading {
+    margin: 177px 0 0 347px;
+}
+.outerDiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.loading div:nth-child(1) {
+    top: 0;
+}
+.loadingTitle {
+    width: 500px;
+    left: -205px;
+    margin-top: 33px;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+}
+.outerDiv div {
+    width: 43px;
+    height: 23px;
+    box-sizing: border-box;
+}
+.box1 {
+    border:1px solid #BE1450;
+    float:left;
+}
+.box2 {
+    border:1px solid #84CC00;
+    float:right; 
+}
+.box3 {
+    border:1px solid #00A5D8;
+    float:right;
+}
+.box4 {
+    border:1px solid #FF6808;
+    float:left;
+}
+.box3,.box4 {
+    margin-top:3px;
+}
+.container {
+    margin: 0 auto;
+    margin-top: 0;
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 51px;
+    background: no-repeat;
+}
+.titleScreen_theme_NoPanel:before, .titleScreen_theme:before,.titleScreen_theme_NoPanel:before, .fog_theme:before, .hazy_theme:before, .icy_theme:before, .wind_theme:before, 
+.snow_theme:before, .showers_theme:before, .sunny_theme:before, .clear_night_theme:before, .partly_sunny_theme:before, .overcast_theme:before, .thundershowers_theme:before, 
+.moon_cloud_theme:before, .moon_hazy_theme:before, .hail_theme:before, .genericImg:before,.thundershowers_theme_dest:before,.fog_theme_dest:before,.hazy_theme_dest:before,
+.icy_theme_dest:before,.wind_theme_dest:before,.snow_theme_dest:before,.showers_theme_dest:before,.sunny_theme_dest:before,.clear_night_theme_dest:before,.partly_sunny_theme_dest:before
+,.overcast_theme_dest:before,.moon_cloud_theme_dest:before,.moon_hazy_theme_dest:before,.hail_theme_dest:before{
+    margin-top: 0;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    top: 0px;
+}
+.background{
+    background-size: 100%;
+}
+.view {
+    width: 840px;
+    position: absolute;
+    z-index: 10;
+    margin: 0 26px 0 24px;
+}
+.header .icon,.icon i, .sidebar {
+    float: left;
+}
+.icon {
+    width: 84px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.icon i {
+    width: 84px;
+    height: 80px;
+    float: left;
+}
+.icon.selected:active,
+.icon.selected.active {
+    background: none;
+}
+.main .header{
+    width: 100%;
+    float: left;
+}
+.main .header .title {
+    float: left;
+    width: 280px;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 0 0px;
+}
+.main .header .title {
+    height: 80px;
+}
+.main .header .title span{
+    width: 485px;
+    font-size: 22px;
+}
+.main .header .title span {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 30px;
+}
+.main .genericTxt{
+    float: left;
+    margin: 0px auto;
+    margin-top: 196px;
+    margin-left: 19px;
+    height: 33%;
+    width: 550px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+    position: relative;
+    
+}
+.main .genericTxt p{
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-align: center;
+    line-height: 36px;
+
+}
+
+/* sidebar
+==============================================================================*/
+.sidebar {
+    width: 210px;
+    height: 400px;
+}
+.sidebar ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0px;
+    line-height: 80px;
+    width: 210px;
+    font-size: 30px;
+    height: 80px;
+}
+.sidebar ul li:after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: repeat-x;
+    top: 79px;
+}
+.sidebar ul li .reaction-area {
+    height: 72px;
+    margin: 4px 4px 4px 4px;
+}
+.sidebar ul li .reaction-area span {
+    font-size: 30px;
+    line-height: 36px; 
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 175px;
+    margin-left: 10px;
+}
+#mainView.main{
+    float: left;
+    margin-left: 42px;
+    width: 588px;
+}
+#mainView.searchListPage, #mainView.favouriteListPage{
+    float: left;
+    margin-left: 21px;
+    width: 609px;
+}
+
+/* My Location
+==============================================================================*/
+.lineseprator:after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: repeat-x;
+    top: 78px;
+}
+.locationName{
+    width: 410px;
+    text-align: right;
+    margin-left: 10px;
+}
+.updateTxt{
+    margin: 2px 0px 0px 20px;
+    padding: 0px;
+    font-size: 22px;
+    width: 527px;
+    line-height: 36px;
+    float: left;
+}
+.content{
+    float: left;
+    width: 100%;
+}
+.content_left{
+    float: left;
+    width: 294px;
+    height: 210px;
+    text-align: center;
+}
+.hourlyIcon i , #destThemeIcon , #destArriveThemeIcon ,.daysIcon i{
+    background-position: 50%;
+    background-repeat: no-repeat; 
+}
+.themeImage{
+    margin-top: -2px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat; 
+}
+.content_left img{
+    text-align: center;
+    width: 294;
+    vertical-align: middle;
+}
+.content_left:after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 292px;
+    right: 0;
+    width: 2px;
+    height: 180px;
+    background: repeat-y;
+    top: 127px;
+}
+.content_right{
+    float: left;
+    width: 294px;
+    margin-top: -15px;
+}
+/*.content_right .minTemp, .content_right .maxTemp{
+    font-size: 30px;
+    text-align: right;
+    width: 284px;
+    margin-right: 20px;
+    margin-top: -5px;
+}*/
+.content_right .currentTemp{
+    font-size: 90px;
+    text-align: center;
+    width: 274px;
+    margin-left: 10px;
+    height: 100px;
+    margin-top: -4px;
+    
+}
+.weatherStatus{
+    margin-left: 20px;
+    width: 474px;
+/*    font-size: 30px;
+    line-height: 66px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;*/
+    margin-top: -20px;
+    float: left;
+}
+.content_left_dest{
+    width: 290px;
+    height: 280px;
+    float: left;
+}
+.updateTxt_dest{
+    margin: 18px 0px 0px 20px;
+    padding: 0px;
+    font-size: 30px;
+    line-height: 36px;
+    float: left;
+    height: 30px;
+    
+}
+.updateTxt_dest span{
+    width: 211px;
+    float: left;
+}
+.updateTxt_dest .flag{
+    width: 28px;
+    height: 35px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 1px;
+}
+.startDestTemp{
+    width: 100%;
+    float: left;
+}
+.startDestTemp{
+    width: 100%;
+    float: left;
+}
+#destThemeIcon.startDestTempLeft, #destArriveThemeIcon.startDestTempLeft{
+    width: 145px;
+    float: left;
+    height: 113px;
+    margin-top: 21px;
+}
+#currentTemp.startDestTempRight, #currentTemp_arrival.startDestTempRight{
+    width: 125px;
+    float: left;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 51px;
+    margin-left: 9px;
+    
+}
+.weatherStatus_dest{ float: left; margin-top: 9px;}
+#weatherStatus span, #weatherStatus_arrival span{
+    width: 195px;
+    font-size: 30px;
+    margin: 22px 0px 0px 20px;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    float: left;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+#weatherStatus.weatherStatus span{
+    margin: 30px 0px 0px 0px;
+    width: 474px;
+    
+}
+#destThemeIcon:after, #destArriveThemeIcon:after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    right: 0;
+    width: 1px;
+    height: 80px;
+    background: repeat-y;
+    top: 208px;
+}
+#destThemeIcon:after{
+    left: 143px;
+}
+#destArriveThemeIcon:after{
+   left: 442px; 
+}
+.content_left img{
+    text-align: center;
+    width: 294;
+    vertical-align: middle;
+}
+.content_left:after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 292px;
+    right: 0;
+    width: 2px;
+    height: 180px;
+    background: repeat-y;
+    top: 127px;
+}
+.content_right{
+    float: left;
+    width: 294px;
+    margin-top: -15px;
+}
+.content_right .minTemp, .content_right .maxTemp{
+    text-align: right;
+    width: 70px;
+    margin-right: 20px;
+    margin-top: 1px;
+    position: relative;
+    right: 0px;
+    left: 204px;
+    height: 30px;
+    
+}
+
+.one-hr-old .header .locationName, 
+.one-hr-old .content,
+.one-hr-old .header .nonfav, .one-hr-old .header .favselected  {
+    opacity: .3;
+    pointer-events: none;
+}
+.hail_theme:before, .moon_hazy_theme, .moon_cloud_theme, .thundershowers, .overcast_theme, .partly_sunny_theme, .clear_night_theme, .clear_theme, .sunny_theme,
+.showers, .snow_theme, .rain_theme, .wind_theme, .icy_theme, .hazy_theme, .fog_theme, .titleScreen_theme_NoPanel, .titleScreen_theme, .titleScreen_theme_NoPanel,
+.titleScreen_theme{
+    background-repeat:no-repeat;
+    background-size:890px;
+}
+.content_left.fog_theme span, .content_left.hazy_theme span, .content_left.icy_theme span, .content_left.wind_theme span, .content_left.rain_theme span, 
+.content_left.snow_theme span, .content_left.showers span, .content_left.sunny_theme span,
+.content_left.clear_theme span, .content_left.clear_night_theme span, .content_left.partly_sunny_theme span,
+.content_left.overcast_theme span, .content_left.thundershowers span, .content_left.moon_cloud_theme span, 
+.content_left.moon_hazy_theme span, .content_left.hail_theme:before span{
+    text-align: center;
+    width: 213px;
+    height: 222px;
+    vertical-align: middle;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+.content_left.clear_night_theme {
+    background-image: none;
+}
+.moon_hazy_theme_dest, .moon_cloud_theme_dest, .thundershowers_theme_dest, .overcast_theme_dest, .partly_sunny_theme_dest, .clear_night_theme_dest, .sunny_theme_dest,
+.showers_theme_dest, .snow_theme_dest, .wind_theme_dest, .icy_theme_dest, .hazy_theme_dest, .fog_theme_dest, .hail_theme_dest{
+    background-size: 100%; 
+}
+
+/*Forecast
+==============================================================================*/
+.forecast-page .sidebar{
+    display: none;
+} 
+.forecast-page .main-wrapper, .forecast-page #mainView{
+    width: 840px;
+    margin-left: 0px;
+}
+.forecast-lineseprator:after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: repeat-x;
+    top: 78px;
+    width: 840px;
+}
+#Hourly{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 252px;
+    height: 80px;
+}
+#Hourly ul{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+}
+#Hourly ul li{
+    margin: 0px;
+    padding: 4px;
+    float: left;
+    list-style: none;
+    width: 118px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+}
+#Hourly ul li:first-child i, #Hourly ul li:last-child i{
+    display: block;
+    background-position: 50%;
+    height: 72px;
+}
+#Hourly ul li div
+{
+    display: block;
+}
+#Hourly ul li:after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+    right: -1px;
+    height: 40px;
+    background: repeat-x;
+    top: 20px;
+    width: 2px;
+}
+#forecastlocation-name.locationName{
+    width: 494px;
+    height: 72px;
+    float: left;
+    margin: 4px 0 4px 10px;
+}
+#forecastlocation-name.locationName span{
+    font-size: 30px;
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 36px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    text-align: right;
+    top: 50%;
+}
+.sliding-holder{
+    overflow: hidden;
+    position: relative;
+    width: 840px;
+}
+.sliding-container{
+    width: 1680px;
+    height: 320px;
+    float: left;
+    position:relative;
+}
+.sliding-container > div {
+    float: left;
+    position: relative;
+}
+.twentyFourHourlist,
+.fiveDaylist{
+    height: 320px;
+    width: 840px;
+    overflow: hidden;  
+    float: left;
+}
+.sliding-container ul{
+    position: relative;
+}
+.sliding-container ul li{
+    height: 320px;    
+    position: absolute;
+    top: 0;
+    list-style: none;
+}
+.twentyFourHourlist ul li{
+    width: 140px;
+}
+.twentyFourHourlist ul li.tfhColoumFirst{
+    left: 0;
+}
+.twentyFourHourlist ul li.tfhColoumSecond{
+    left: 140px;
+}
+.twentyFourHourlist ul li.tfhColoumThird{
+    left: 280px;
+}
+.twentyFourHourlist ul li.tfhColoumFour{
+    left: 420px;
+}
+.twentyFourHourlist ul li.tfhColoumFive{
+    left: 560px;
+}
+.twentyFourHourlist ul li.tfhColoumSix{
+    left: 700px;
+}
+.fiveDaylist ul li{
+    width: 168px;
+}
+.fiveDaylist ul li.fiveDayFirstColoum{
+    left: 0;
+}
+.fiveDaylist ul li.fiveDaySecondColoum{
+    left: 168px;
+}
+.fiveDaylist ul li.fiveDayThirdColoum{
+    left: 336px;
+}
+.fiveDaylist ul li.fiveDayFourthColoum{
+    left: 504px;
+}
+.fiveDaylist ul li.fiveDayFifthColoum{
+    left: 672px;
+}
+.sliding-container ul li .border{
+    width: 1px;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    background: #fff;
+    opacity: 0.4;
+}
+.twentyFourHourlist ul li.tfhColoumFirst .border,
+.twentyFourHourlist ul li.tfhColoumSecond .border,
+.twentyFourHourlist ul li.tfhColoumThird .border{
+    left: 140px;
+}
+.twentyFourHourlist ul li.tfhColoumFour .border,
+.twentyFourHourlist ul li.tfhColoumFive .border,
+.twentyFourHourlist ul li.tfhColoumSix .border{
+    right: 140px;
+}
+.twentyFourHourlist ul li.tfhColoumFour .border{
+    display: none;
+}
+.fiveDaylist ul li.fiveDayFirstColoum .border,
+.fiveDaylist ul li.fiveDaySecondColoum .border,
+.fiveDaylist ul li.fiveDayThirdColoum .border{
+    left: 168px;
+}
+.fiveDaylist ul li.fiveDayFourthColoum .border,
+.fiveDaylist ul li.fiveDayFifthColoum .border{
+    right: 168px;
+}
+.fiveDaylist ul li.fiveDayFourthColoum .border{
+    display: none;
+}
+.sliding-container ul li .coloum_left{
+    float: left;
+    height: 320px;
+    text-align: center;
+}
+.twentyFourHourlist ul li .coloum_left{
+    width: 140px;
+}
+.fiveDaylist li .coloum_left{
+    width: 168px;
+}
+.twentyFourHourlist ul li.tfhColoumFour .coloum_left,
+.twentyFourHourlist ul li.tfhColoumFive .coloum_left,
+.twentyFourHourlist ul li.tfhColoumSix .coloum_left,
+.fiveDaylist li.fiveDayFourthColoum .coloum_left,
+.fiveDaylist li.fiveDayFifthColoum .coloum_left{
+    float: right;
+}
+.fiveDaylist ul li .coloum_right{}
+.sliding-container ul li .coloum_right{
+    float: right;
+    height: 320px;
+}
+.twentyFourHourlist ul li .coloum_right{
+    width: 400px;
+}
+.fiveDaylist ul li .coloum_right{
+    width: 316px;
+}
+.twentyFourHourlist ul li.tfhColoumFour .coloum_right,
+.twentyFourHourlist ul li.tfhColoumFive .coloum_right,
+.twentyFourHourlist ul li.tfhColoumSix .coloum_right,
+.fiveDaylist ul li.fiveDayFourthColoum .coloum_right,
+.fiveDaylist ul li.fiveDayFifthColoum .coloum_right{
+    float: left;
+}
+.sliding-container ul li .coloum_left >div{
+    width: 100%;
+    font-size: 26px;
+    float: left;
+}
+.twentyFourHourlist ul li .coloum_left .timePeriod,
+.twentyFourHourlist ul li .coloum_left .tempIcon span,
+.twentyFourHourlist ul li .coloum_left .windDirection span,
+.fiveDaylist ul li .coloum_left .days,
+.fiveDaylist ul li .coloum_left .daysTemp,
+.fiveDaylist ul li .coloum_left .windDir{
+    line-height: 36px;
+    height: 36px;
+}
+.twentyFourHourlist ul li .coloum_left .timePeriod{
+    margin-top: 8px;
+}
+.fiveDaylist ul li .coloum_left .days{
+    margin-top: 17px;
+}
+
+
+
+.fiveDaylist ul li .coloum_left .days,
+.fiveDaylist ul li .coloum_left .daysTemp,
+.fiveDaylist ul li .coloum_left .windDir{
+    text-transform: uppercase;
+}
+.twentyFourHourlist ul li .coloum_left .hourlyIcon,
+.fiveDaylist ul li .coloum_left .daysIcon{
+    height: 86px;
+}
+.twentyFourHourlist ul li .coloum_left .hourlyIcon{
+    margin-top: 7px;
+}
+.sliding-container ul li .coloum_left >div i{
+    width: 100%;
+    float: left;
+    font-style: normal;
+}
+.twentyFourHourlist ul li .coloum_left .hourlyIcon i,
+.fiveDaylist ul li .coloum_left .daysIcon i{
+    height: 86px;
+}
+.twentyFourHourlist ul li .coloum_left .tempIcon{
+    margin-top: 5px;
+}
+.twentyFourHourlist ul li .coloum_left .tempIcon i{
+    height: 77px;
+    
+}
+.twentyFourHourlist ul li .coloum_left .tempIcon span{
+    line-height: 77px;
+}
+.twentyFourHourlist ul li .coloum_left .windDirection{
+    margin: 7px 0 0 4px;
+}
+.twentyFourHourlist ul li .coloum_left .windDirection i{
+    height: 92px;
+}
+.twentyFourHourlist ul li .coloum_left .windDirection span{
+    line-height: 92px;
+    color: #000;
+    text-shadow: none;
+}
+.sliding-container ul li .coloum_right > div{
+    width: 100%;
+    height: 72px;
+    float: left;
+}
+.sliding-container ul li .coloum_right > div > span{
+    font-size: 30px;
+    line-height: 36px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sliding-container ul li .coloum_right > div{
+    margin-top: 8px;
+}
+.twentyFourHourlist ul li .coloum_right .tempTitle span,
+.fiveDaylist ul li .coloum_right .tempTitle span{
+    width: 100%;
+    float: left;
+}
+.twentyFourHourlist ul li .coloum_right > div > span.changeRainTxt,
+.twentyFourHourlist ul li .coloum_right > div > span.visDetailTxt,
+.twentyFourHourlist ul li .coloum_right > div > span.cloudDetailTxt{
+    width: 260px;
+    float: left;
+}
+.twentyFourHourlist ul li .coloum_right > div > span.changeRainValue,
+.twentyFourHourlist ul li .coloum_right > div > span.visDetailValue,
+.twentyFourHourlist ul li .coloum_right > div > span.cloudDetailValue{
+    width: 132px;
+    float: right;
+}
+.fiveDaylist ul li .coloum_right > div > span.changeRainTxtFiveDay,
+.fiveDaylist ul li .coloum_right > div > span.cloudDetailTxtFiveDay,
+.fiveDaylist ul li .coloum_right > div > span.visDetailTxtFiveDay{
+    width: 200px;
+    float: left;
+}
+.fiveDaylist ul li .coloum_right > div > span.changeRainValue,
+.fiveDaylist ul li .coloum_right > div > span.cloudDetailValue,
+.fiveDaylist ul li .coloum_right > div > span.visDetailValue{
+    width: 106px;
+    float: right;
+}
+.fiveDaylist ul li .coloum_left .daysIcon{
+    margin-top: 23px;
+}
+.fiveDaylist ul li .coloum_left .daysTemp{
+    margin-top: 23px;
+}
+.fiveDaylist ul li .coloum_left .windDir{
+    margin-top: 44px;
+}
+
+
+/*Temperature Icons
+==============================================================================*/
+
+.tempIcon i.plus50deg{ background: url('../../res/10inch/temp_icon/50deg.png') no-repeat 50%;  display: block; }
+.tempIcon i.plus45deg{  background: url('../../res/10inch/temp_icon/45deg.png') no-repeat 50%;  }
+.tempIcon i.plus40deg{  background: url('../../res/10inch/temp_icon/40deg.png') no-repeat 50%;  }
+.tempIcon i.plus35deg{  background: url('../../res/10inch/temp_icon/35deg.png') no-repeat 50%;  }
+.tempIcon i.plus30deg{  background: url('../../res/10inch/temp_icon/30deg.png') no-repeat 50%;  }
+.tempIcon i.plus25deg{  background: url('../../res/10inch/temp_icon/25deg.png') no-repeat 50%;  }
+.tempIcon i.plus20deg{  background: url('../../res/10inch/temp_icon/20deg.png') no-repeat 50%;  }
+.tempIcon i.plus15deg{  background: url('../../res/10inch/temp_icon/15deg.png') no-repeat 50%;  }
+.tempIcon i.plus10deg{  background: url('../../res/10inch/temp_icon/10deg.png') no-repeat 50%;  }
+.tempIcon i.plus5deg{  background: url('../../res/10inch/temp_icon/5deg.png') no-repeat 50%;  }
+.tempIcon i.plus0deg{  background: url('../../res/10inch/temp_icon/0deg.png') no-repeat 50%;  }
+.tempIcon i.minus-5deg{  background: url('../../res/10inch/temp_icon/-5deg.png') no-repeat 50%;  }
+.tempIcon i.minus-10deg{  background: url('../../res/10inch/temp_icon/-10deg.png') no-repeat 50%;  }
+.tempIcon i.minus-15deg{  background: url('../../res/10inch/temp_icon/-15deg.png') no-repeat 50%;  }
+.tempIcon i.minus-20deg{  background: url('../../res/10inch/temp_icon/-20deg.png') no-repeat 50%;  }
+.tempIcon i.minus-25deg{  background: url('../../res/10inch/temp_icon/-25deg.png') no-repeat 50%;  }
+.tempIcon i.minus-30deg{  background: url('../../res/10inch/temp_icon/-30deg.png') no-repeat 50%;  }
+.tempIcon i.minus-35deg{  background: url('../../res/10inch/temp_icon/-35deg.png') no-repeat 50%;  }
+.tempIcon i.minus-40deg{  background: url('../../res/10inch/temp_icon/-40deg.png') no-repeat 50%;  }
+.tempIcon i.minus-45deg{  background: url('../../res/10inch/temp_icon/-45deg.png') no-repeat 50%;  }
+.tempIcon i.minus-50deg{  background: url('../../res/10inch/temp_icon/-50deg.png') no-repeat 50%;  }
+
+/*Wind Icons
+==============================================================================*/
+.windDirection i.degree0{  background: url('../../res/10inch/wind-icon_0.png') no-repeat 50%  0%;  }
+.windDirection i.degree45{  background: url('../../res/10inch/wind-icon_45.png') no-repeat 50%  0%;  }
+.windDirection i.degree90{  background: url('../../res/10inch/wind-icon_90.png') no-repeat 50%  0%;  }
+.windDirection i.degree135{  background: url('../../res/10inch/wind-icon_135.png') no-repeat 50% 0%;  }
+.windDirection i.degree180{  background: url('../../res/10inch/wind-icon_180.png') no-repeat 50% 0%;  }
+.windDirection i.degree225{  background: url('../../res/10inch/wind-icon_225.png') no-repeat 50% 0%;  }
+.windDirection i.degree270{  background: url('../../res/10inch/wind-icon_270.png') no-repeat 50% 0%;  }
+.windDirection i.degree315{  background: url('../../res/10inch/wind-icon_315.png') no-repeat 50% 0%;  }
+.windDirection i.degree360{  background: url('../../res/10inch/wind-icon_360.png') no-repeat 50% 0%;  }
+
+/* SETTINGS PAGE STYLES
+==============================================================================*/
+.container.settings-page, .container.dest-background {
+    background: repeat-x;
+    background-size: 100% 100%;
+}
+.container.settings-page:after, 
+.container.settings-page:before,
+.settings-page .sidebar, .forecast-page .sidebar {
+    display: none;
+}
+.settings-page #mainView, .settings-page .main, 
+.settings-page .screen {    
+    width: 840px;
+    margin-left: 0px;
+}
+.settings-page .screen{
+    height: 400px;
+}
+.settings .legal-header .reaction-area {
+    height: 72px;
+    /*width: 100%;*/
+    box-sizing: border-box;
+    margin: 4px 0;
+    padding: 0 16px;
+    font-size: 30px;
+    line-height: 72px;
+    background-repeat: repeat-x;
+}
+.legal-intro {
+    text-align: center;
+    height: 279px;
+    width: 840px;
+    float: left;
+}
+.legal-intro .legal-intro-message {
+    position: relative;
+    font-size: 30px;
+    line-height: 36px;
+    top: 160px;
+    -webkit-transform: translateY(-50%);
+    margin: 0px 20px;
+    width: 800px;
+    display: -webkit-box;
+    max-height: 252px;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.continue-button {
+    width: 336px;
+    margin: 0 252px;
+    float: left;
+    position: relative;
+    padding: 0px 4px;
+    box-sizing: border-box;
+}
+.continue-button:after,
+.continue-button:before {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background: repeat-x;
+}
+.continue-button:before {
+    top: -1px;
+}
+.continue-button:after {
+    bottom: -1px;
+}
+.continue-button .reaction-area {
+    height: 72px;
+    margin: 4px 0;
+    text-align: center;
+}
+.continue-button .reaction-area span {
+    font-size: 30px;
+    text-align: center;
+    line-height: 36px; 
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.in-motion .continue-button {
+    pointer-events: none;
+    color: #808080;
+}
+#legal-container {
+    height: 400px;
+}
+.in-motion #legal-container {
+    display: none;
+}
+.scroll-container .legal-information {
+    direction: rtl;
+    overflow-x:hidden;
+    overflow-y: auto !important;
+    position: relative;
+    max-width: 100%;
+    height: 390px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.scroll-container .legal-information .scroll {
+    overflow: hidden;
+    padding: 30px 0 0;
+}
+.scroll-container .legal-information p {
+    text-align: left;
+    direction: ltr;
+}
+.legal-information p {
+    font-size: 25px;
+    width: 740px;
+    line-height: 30px;
+    padding: 0 0 30px 0;
+    margin: 0;
+}
+.legal-info-in-motion {
+    height: 100%;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    display: none;
+}
+.in-motion .legal-info-in-motion {
+    display: block;
+}
+.legal-info-in-motion span {
+    position: relative;
+    font-size: 30px;
+    line-height: 36px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: block;
+    margin: 0px 20px;
+    width: 800px;
+}
+.transformRemoval {
+    transform:none!important;
+}
+.setting-overLay {
+    height: 390px; 
+    width: 756px; 
+    position: absolute; 
+    z-index: 10000; 
+    display: none; 
+    right: 0;
+}
+.settings-page .main-wrapper{
+    overflow: visible;
+    width: 840px;
+}
+
+/*** Legal information header styles  ***/
+
+.legal-header {
+    height: 80px;
+    width: 100%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0px 4px;
+}
+
+.legal-header .title
+{
+    height: 80px;
+}
+
+.legal-header .title span {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    max-height: 72px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.legal-header:after {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 0px;
+    top: 79px;
+    right: 0px;
+    height: 2px;
+    background: repeat-x;
+}
+#legal-container {
+    height: 400px;
+}
+.scroll-container .legal-information {
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: auto!important;
+    position: relative;
+    max-width: 100%;
+    height: 390px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.setting-overLay {
+    height: 390px;
+    width: 756px;
+    position: absolute;
+    z-index: 10000;
+    display: none;
+    right: 0;
+}
+
+
+/* SEARCH LIST PAGE
+==============================================================================*/
+.main .searchHeaderTitle{
+    width: 504px;
+    margin-left: 105px;
+    height: 80px;
+}
+.main .searchHeaderTitleScroll{
+    margin-left: 22px;
+}
+.search-title{
+    width: 476px;
+    margin-left: 14px;
+    margin-right: 14px;
+    
+}
+.searchHeaderTitle:after{
+    left: 105px !important;
+}
+.main .searchHeaderTitleScroll:after{
+    left: 20px !important;
+}
+.scroll-container .searchListChevron-up{
+    top: 80px;
+}
+#list-container {
+    height: 320px;
+}
+
+.scroll-container .icon {
+    position: absolute;
+    width: 84px;
+    height: 80px;
+    z-index: 1;
+    left: 0;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.with-out-scroll .icon {
+    display: none;
+}
+.with-scroll .icon {
+    display: block;
+}
+.with-out-scroll .favselected {
+    display: block;
+}
+.scroll-container .chevron-up {
+    top: 0;
+}
+.scroll-container .chevron-down {
+    bottom: 0;
+}
+.scroll-container .list {
+    direction: rtl;
+    overflow-x:hidden;
+    position: relative;
+    max-width: 100%;
+    height: 320px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.with-out-scroll .list {
+    overflow-y:hidden !important;
+}
+.with-scroll .list {
+    overflow-y:auto !important;
+}
+.list ul {
+    list-style: none;
+    direction: ltr;
+}
+.list li.scrollListElement{
+    margin-left: 21px;
+}
+.list li {
+    height: 80px;
+    /*width: 100%;*/
+    position: relative;
+    padding: 4px;
+    box-sizing: border-box;
+}
+.list li:after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    content: " ";
+}
+.with-scroll .list li:last-child:after {
+    display: none;
+}
+.list .reaction-area {
+    height: 72px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 36px;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+/*#fav-list .reaction-area {
+    height: 72px;
+    padding: 0px;
+    display: block;
+}*/
+.list .loc-id {
+    display: none;
+}
+.list .loc-name {
+    font-size: 30px;
+    line-height: 36px;
+    height: 36px;
+    margin-top: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.list .province {
+    font-size: 26px;
+    line-height: 30px;
+    height: 32px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+/* webkit scroll bar customization */
+
+
+.scroll-container .list::-webkit-scrollbar-track,
+.scroll-container .legal-information::-webkit-scrollbar-track {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image:url(../../res/scroll_track_vertical_4grid.png);
+    background-size: 4px 100%;
+}
+.scroll-container .list::-webkit-scrollbar-thumb,
+.scroll-container .legal-information::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 70px/30px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 13px 40.4px;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    min-height: 60px;
+}
+.scroll-container .list::-webkit-scrollbar,
+.scroll-container .legal-information::-webkit-scrollbar {
+    width: 84px;
+}
+.scroll-container .list::-webkit-scrollbar-track-piece:start,
+.scroll-container .list::-webkit-scrollbar-track-piece:end,
+.scroll-container .legal-information::-webkit-scrollbar-track-piece:start,
+.scroll-container .legal-information::-webkit-scrollbar-track-piece:end {
+    background-color: transparent;
+}
+.scroll-container .list::-webkit-scrollbar-button:start:decrement,
+.scroll-container .list::-webkit-scrollbar-button:end:increment,
+.scroll-container .legal-information::-webkit-scrollbar-button:start:decrement,
+.scroll-container .legal-information::-webkit-scrollbar-button:end:increment {
+    width: 84px;
+    height: 80px;
+}
+.scroll-container .legal-information::-webkit-scrollbar-button:end:increment {
+    height: 70px;
+}
+
+.scroll_container .list::-webkit-scrollbar-button:end:increment,
+.scroll_container .list::-webkit-scrollbar-button:end:decrement,
+.scroll_container .legal-information::-webkit-scrollbar-button:end:increment,
+.scroll_container .legal-information::-webkit-scrollbar-button:end:decrement {
+    height:70px;
+}
+.scroll-container .list::-webkit-scrollbar-button:vertical:increment,
+.scroll-container .legal-information::-webkit-scrollbar-button:vertical:increment {
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.scroll-container .list::-webkit-scrollbar-button:vertical:decrement,
+.scroll-container .legal-information::-webkit-scrollbar-button:vertical:decrement {
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.scroll-container .list::-webkit-scrollbar-track:vertical,
+.scroll-container .legal-information::-webkit-scrollbar-track:vertical {
+    border-top:0 solid transparent;
+    border-right:40px solid transparent;
+    border-bottom:0px solid transparent;
+    border-left:40px solid transparent;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+.scroll-container .list::-webkit-scrollbar-track:vertical,
+.scroll-container .legal-information::-webkit-scrollbar-track:vertical {
+    border-bottom:0px solid transparent !important;
+    border-top:0px solid transparent !important;
+}
+.scroll-container .list::-webkit-scrollbar-track-piece,
+.scroll-container .legal-information::-webkit-scrollbar-track-piece {
+    border-top:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:15px solid transparent;
+    margin:-13px 0px -13px 0px;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.scroll-container .list::-webkit-scrollbar-thumb:vertical,
+.scroll-container .legal-information::-webkit-scrollbar-thumb:vertical {
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 6px 100%;
+}
+.bottom::-webkit-scrollbar-button:vertical:increment {
+    cursor:default;
+}
+.top::-webkit-scrollbar-button:vertical:decrement {
+    cursor:default;
+}
+
+/* My favourite
+==============================================================================*/
+.noFavorite{
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+}
+.noFavIcon{
+    margin-left: 273px;
+}
+.noFavIcon i{
+    display: block;
+    text-align: center;
+}
+.noFavMessage{
+    height:130px;
+    /*width: 540px;*/
+    text-align: center;
+    margin-left: 21px;
+    margin-top: 16px;
+}
+.noFavMessage p{
+    width: 550px;
+    margin: 0px auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height:36px;
+}
+#noFav .icon:active {
+    background: none;
+}
+#list-container.fav-container, .scroll-container .fav-list {
+    height: 400px;
+    position: relative;
+}
+.list .loc-data{
+    float: left;
+    width: 226px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height:36px;
+    margin-left: 93px;
+}
+.list .fav-with-out-scroll {
+    width: 320px;
+}
+.list .loc-temp, .list .loc-fahren{
+    float: left;
+    width: 72px;
+    text-align: right;
+    margin-left: 13px;
+    line-height:72px; 
+    
+    font-size: 30px;
+}
+/*.list .loc-fahren{
+    color: #b3b3b3;   
+}*/
+#fav-list .icon{
+    top: 0;
+}
+.favLineSeperator:after, .favDayIconselected:after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: 85px;
+    right: -3px;
+    height: 40px;
+    background: repeat-x;
+    top: 20px;
+}
+.with-out-scroll .list .loc-data{
+    width: 310px;
+}
+
+/* No Destination
+==============================================================================*/
+
+.nodestination{
+    float: left;
+    margin: 0px auto;
+    margin-top: 164px;
+    margin-left: 19px;
+    width: 550px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+    position: relative;
+    height: 72px;
+}
+.nodestination p{
+    text-overflow: ellipsis;
+    top: 50%;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-align: center;
+    line-height: 36px;
+}
+#fav-list .reaction-area{
+    height: 72px;
+    padding: 0px;
+}
+#fav-list .favList-element{
+    height: 72px;
+    width: 100%;
+}
+#favourite-list .scroll .icon{
+    display: block;
+}
+
+
+
+/* arabic css
+=========================================================================*/
+
+.arabicFont .list .loc-name, 
+.arabicFont .list .province, 
+.arabicFont .settings .legal-header .reaction-area, 
+.arabicFont .sidebar ul li .reaction-area span {
+    text-align: right;
+}
+.arabicFont .legal-info-in-motion span, .arabicFont .legal-intro .legal-intro-message, 
+.arabicFont .loadingTitle, .arabicFont .main .header .search-title, 
+.arabicFont .no-destination .content p, 
+.arabicFont .updateTxt span,
+.arabicFont .loadingTitle, .arabicFont .updateTxt{
+    direction: rtl;
+}
+.arabicFont .main .header .title span{
+    direction: rtl;
+    text-align: left;
+}
+.arabicFont .main .genericTxt p{
+    line-height: 44px;
+}
+.arabicFont .updateTxt span{
+    display: block;
+}
+.arabicFont .updateTxt span{
+    text-align: left;
+}
+.arabicFont .generic .content p, .arabicFont .no-destination .content p {
+    font-size: 26px;
+}
+.arabicFont .list .loc-name{
+    direction: rtl;
+    line-height: 28px;
+}
+.arabicFont .content_right .currentTemp{
+    line-height: 108px;
+}
+.arabicFont .minTemp{
+    margin: 0px;
+    line-height: 36px;
+}
+.arabicFont .maxTemp{
+    margin: 0px;
+    line-height: 38px;
+}
+.arabicFont .locationName, .arabicFont .list .loc-data{
+    line-height: 46px;
+}
+.arabicFont .sidebar ul li .reaction-area span, .arabicFont .nodestination p{
+    line-height: 44px;
+}
+.arabicFont .startDestTempRight{
+    line-height: 66px;
+}
+.arabicFont .main .searchHeaderTitleScroll .search-title{
+    margin-left: 97px;
+}
+/* Hindhi css
+=========================================================================*/
+.indicFont .main .header .title{
+    font-size: 16px;
+}
+.indicFont .continue-button .reaction-area span,
+.indicFont .generic .content p,
+.indicFont .noFavMessage p,
+.indicFont .legal-intro .legal-intro-message,
+.indicFont .loadingTitle, .indicFont .list .loc-data,
+.indicFont .main .header .search-title, .indicFont .locationName span, 
+.indicFont .sidebar ul li .reaction-area span, .indicFont .list .loc-name{
+    font-size: 26px;
+}
+.indicFont .list .province{
+    font-size: 22px;
+}
+.indicFont .weatherStatus_dest span{
+    line-height: 60px;
+}
+.indicFont #weatherStatus span{
+    line-height: 60px;
+}
+.indicFont .startDestTempRight, .arabicFont .startDestTempRight{
+    line-height: 48px;
+}
+.indicFont .content_right .currentTemp{
+    line-height: 88px;
+}
+.indicFont .changeRain .changeRainTxt, .indicFont .changeRain .changeRainTxtFiveDay, 
+.indicFont .changeRain .changeRainValue, .indicFont .cloudDetail .cloudDetailTxt,
+.indicFont .cloudDetail .cloudDetailTxtFiveDay, .indicFont .cloudDetail .cloudDetailValue, 
+.indicFont .visDetail .visDetailTxt,.indicFont .visDetail .visDetailTxtFiveDay, 
+.indicFont .visDetail .visDetailValue{
+     font-size: 26px;
+     line-height: 48px;
+}
+
+.indicFont #weatherStatus span, .indicFont #weatherStatus_arrival span, 
+.indicFont .tempTitle span{
+    font-size: 26px;
+    line-height: 48px;
+}
+.indicFont .legal-intro .legal-intro-message{
+    font-size: 26px;
+    line-height: 48px;
+}

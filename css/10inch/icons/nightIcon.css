@@ -1,0 +1,229 @@
+body {
+    color: #fff;
+    background: #000;
+    text-shadow: 0 -1px 0 #000;
+}
+.full-loading .loadingBgGradient, .container.settings-page, .container.dest-background {
+    background-image: url('../../../res/10inch/night/bg.png');
+}
+.sidebar ul li:after,.legal-header:after, .list li:after{
+    background: url('../../../res/10inch/night/linesep_horizontal.png');
+}
+.lineseprator:after {
+    border-bottom: 1px solid rgba(88,88,88,.6);
+}
+.updateTxt_dest .flag{
+       background: url('../../../res/10inch/flag.png') no-repeat;
+}
+.content_left:after, #destThemeIcon:after, #destArriveThemeIcon:after {
+    border-right: 1px solid rgba(88,88,88,.6);
+}
+.forecast-lineseprator:after{
+    border-bottom : 1px solid #fff;
+    opacity: 0.4;
+}
+.twentyFourHourlist ul li:last-child:after, .fiveDaylist ul li:last-child:after{
+    border-right : none;
+}
+.genericImg:before{
+    background: url('../../../res/title_night_theme_10.jpg');
+}
+.icon.update i {
+    background-image: url('../../../res/10inch/night/refresh.png');
+}
+.icon.nonfav i, .noFavIcon i {
+    background-image: url('../../../res/10inch/night/fav.png');
+}
+.favselected i {
+    background-image: url('../../../res/10inch/night/favselect.png');
+}
+.icon.fav:active i {
+    background-image: url('../../../res/10inch/night/fav.png');
+}
+.titleScreen_theme{
+    background-image:url('../../../reg/title_day_theme_10.jpg');
+}
+
+/********Weather Location screen BG***********/
+.titleScreen_theme_NoPanel:before{background-image:url('../../../res/title_day_theme_10.jpg');}
+.titleScreen_theme:before{ background-image:url('../../../reg/title_day_theme_10.jpg');}
+.titleScreen_theme_NoPanel:before{ background-image:url('../../../res/title_day_theme_10.jpg');}
+.fog_theme:before{ background-image:url('../../../res/bg/Foggy_Dark_Theme.jpg'); }
+.hazy_theme:before{ background-image:url('../../../res/bg/Hazy_Dark_Theme.jpg'); }
+.icy_theme:before{ background-image:url('../../../res/bg/Icy_Dark_Theme.jpg');}
+.wind_theme:before{ background-image:url('../../../res/bg/Windy_Dark_Theme.jpg'); }
+.snow_theme:before{background-image:url('../../../res/bg/Snow_Dark_Theme.jpg'); }
+.showers_theme:before{ background-image:url('../../../res/bg/Rain_Dark_Theme.jpg'); }
+.sunny_theme:before{ background-image:url('../../../res/bg/Sunny_Dark_Theme.jpg'); }
+.clear_night_theme:before{ background-image:url('../../../res/bg/ClearNight_Dark_Theme.jpg'); }
+.partly_sunny_theme:before{ background-image:url('../../../res/bg/SunnyCloud_Dark_Theme.jpg'); }
+.overcast_theme:before{ background-image:url('../../../res/bg/Overcast_Dark_Theme.jpg');}
+.thundershowers_theme:before{ background-image:url('../../../res/bg/Lightning_Dark_Theme.jpg'); }
+.moon_cloud_theme:before{ background-image:url('../../../res/bg/MoonCloud_Dark_Theme.jpg'); }
+.moon_hazy_theme:before{ background-image:url('../../../res/bg/MoonHazy_Dark_Theme.jpg'); }
+.hail_theme:before { background-image: url('../../../res/bg/Hail_Dark_Theme.jpg'); }
+
+/********Weather Location Icons PNG***********/
+.themeImage.sunnyIcon{ background-image:url('../../../res/10inch/night/currentloc/sunny.png'); }
+.themeImage.sunnywithcloudIcon{ background-image:url('../../../res/10inch/night/currentloc/sunny-with-cloud.png'); }
+.themeImage.hazyIcon{ background-image:url('../../../res/10inch/night/currentloc/hazy.png'); }
+.themeImage.overcastIcon{ background-image:url('../../../res/10inch/night/currentloc/overcast.png'); }
+.themeImage.sunnywithrainIcon{ background-image:url('../../../res/10inch/night/currentloc/sunny-with-rain.png'); }
+.themeImage.iceIcon{ background-image:url('../../../res/10inch/night/currentloc/ice.png'); }
+.themeImage.rainwithsnowIcon{ background-image:url('../../../res/10inch/night/currentloc/rain-with-snow.png'); }
+.themeImage.foggyIcon{ background-image:url('../../../res/10inch/night/currentloc/foggy.png'); }
+.themeImage.rainIcon{ background-image:url('../../../res/10inch/night/currentloc/rain.png'); }
+.themeImage.moonwithrainIcon{ background-image:url('../../../res/10inch/night/currentloc/moon-with-rain.png'); }
+.themeImage.electricstormIcon{ background-image:url('../../../res/10inch/night/currentloc/electric-storm.png'); }
+.themeImage.moonwithstormIcon{ background-image:url('../../../res/10inch/night/currentloc/electric-storm_night.png'); }
+.themeImage.moonwithsnowIcon{ background-image:url('../../../res/10inch/night/currentloc/snow_night.png'); }
+.themeImage.snowIcon{ background-image:url('../../../res/10inch/night/currentloc/snow.png'); }
+.themeImage.hailIcon{ background-image:url('../../../res/10inch/night/currentloc/hail.png'); }
+.themeImage.sunnywithsnowIcon{ background-image:url('../../../res/10inch/night/currentloc/sunny-with-snow.png'); }
+.themeImage.windIcon{ background-image:url('../../../res/10inch/night/currentloc/wind.png'); }
+.themeImage.moonIcon{ background-image:url('../../../res/10inch/night/currentloc/moon.png'); }
+.themeImage.moonwithcloudIcon{ background-image:url('../../../res/10inch/night/currentloc/moon-with-cloud.png'); }
+.themeImage.hazywithmoonIcon{ background-image:url('../../../res/10inch/night/currentloc/hazy_night.png'); }
+.themeImage.rainandsnowwithmoonIcon{ background-image:url('../../../res/10inch/night/currentloc/rain-and-snow.png'); }
+.themeImage.foggywithmoonIcon{ background-image:url('../../../res/10inch/night/currentloc/foggy_night.png'); }
+.themeImage.hailwithmoonIcon{ background-image:url('../../../res/10inch/night/currentloc/hail_night.png'); }
+
+/********Destination screen BG***********/
+.fog_theme_dest{ background-image:url('../../../res/bg/Foggy_Dark_Theme_NoPanel.jpg'); }
+.hazy_theme_dest{ background-image:url('../../../res/bg/Hazy_Dark_Theme_NoPanel.jpg'); }
+.icy_theme_dest{ background-image:url('../../../res/bg/Icy_Dark_Theme_NoPanel.jpg');}
+.wind_theme_dest{ background-image:url('../../../res/bg/Windy_Dark_Theme_NoPanel.jpg'); }
+.snow_theme_dest{background-image:url('../../../res/bg/Snow_Dark_Theme_NoPanel.jpg'); }
+.showers_theme_dest{ background-image:url('../../../res/bg/Rain_Dark_Theme_NoPanel.jpg'); }
+.sunny_theme_dest{ background-image:url('../../../res/bg/Sunny_Dark_Theme_NoPanel.jpg'); }
+.clear_night_theme_dest{ background-image:url('../../../res/bg/ClearNight_Dark_Theme_NoPanel.jpg'); }
+.partly_sunny_theme_dest{ background-image:url('../../../res/bg/SunnyCloud_Dark_Theme_NoPanel.jpg'); }
+.overcast_theme_dest{ background-image:url('../../../res/bg/Overcast_Dark_Theme_NoPanel.jpg');}
+.thundershowers_theme_dest{ background-image:url('../../../res/bg/Lightning_Dark_Theme_NoPanel.jpg'); }
+.moon_cloud_theme_dest{ background-image:url('../../../res/bg/MoonCloud_Dark_Theme_NoPanel.jpg'); }
+.moon_hazy_theme_dest{ background-image:url('../../../res/bg/MoonHazy_Dark_Theme_NoPanel.jpg'); }
+.hail_theme_dest{ background-image:url('../../../res/bg/Hail_Dark_Theme_NoPanel.jpg'); }
+
+.fog_theme_dest:before{ background-image:url('../../../res/bg/Foggy_Dark_Theme_NoPanel.jpg'); }
+.hazy_theme_dest:before{ background-image:url('../../../res/bg/Hazy_Dark_Theme_NoPanel.jpg'); }
+.icy_theme_dest:before{ background-image:url('../../../res/bg/Icy_Dark_Theme_NoPanel.jpg');}
+.wind_theme_dest:before{ background-image:url('../../../res/bg/Windy_Dark_Theme_NoPanel.jpg'); }
+.snow_theme_dest:before{background-image:url('../../../res/bg/Snow_Dark_Theme_NoPanel.jpg'); }
+.showers_theme_dest:before{ background-image:url('../../../res/bg/Rain_Dark_Theme_NoPanel.jpg'); }
+.sunny_theme_dest:before{ background-image:url('../../../res/bg/Sunny_Dark_Theme_NoPanel.jpg'); }
+.clear_night_theme_dest:before{ background-image:url('../../../res/bg/ClearNight_Dark_Theme_NoPanel.jpg'); }
+.partly_sunny_theme_dest:before{ background-image:url('../../../res/bg/SunnyCloud_Dark_Theme_NoPanel.jpg'); }
+.overcast_theme_dest:before{ background-image:url('../../../res/bg/Overcast_Dark_Theme_NoPanel.jpg');}
+.thundershowers_theme_dest:before{ background-image:url('../../../res/bg/Lightning_Dark_Theme_NoPanel.jpg'); }
+.moon_cloud_theme_dest:before{ background-image:url('../../../res/bg/MoonCloud_Dark_Theme_NoPanel.jpg'); }
+.moon_hazy_theme_dest:before{ background-image:url('../../../res/bg/MoonHazy_Dark_Theme.jpg'); }
+.hail_theme_dest:before{ background-image:url('../../../res/bg/Hail_Dark_Theme_NoPanel.jpg'); }
+/********Weather Destination Location Icons PNG***********/
+#destThemeIcon.sunnyIcon{ background-image:url('../../../res/10inch/night/dest/sunny.png'); }
+#destThemeIcon.sunnywithcloudIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-cloud.png'); }
+#destThemeIcon.hazyIcon{ background-image:url('../../../res/10inch/night/dest/hazy.png'); }
+#destThemeIcon.overcastIcon{ background-image:url('../../../res/10inch/night/dest/overcast.png'); }
+#destThemeIcon.sunnywithrainIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-rain.png'); }
+#destThemeIcon.iceIcon{ background-image:url('../../../res/10inch/night/dest/ice.png'); }
+#destThemeIcon.rainwithsnowIcon{ background-image:url('../../../res/10inch/night/dest/rain-with-snow.png'); }
+#destThemeIcon.foggyIcon{ background-image:url('../../../res/10inch/night/dest/foggy.png'); }
+#destThemeIcon.rainIcon{ background-image:url('../../../res/10inch/night/dest/rain.png'); }
+#destThemeIcon.moonwithrainIcon{ background-image:url('../../../res/10inch/night/dest/moon-with-rain.png'); }
+#destThemeIcon.electricstormIcon{ background-image:url('../../../res/10inch/night/dest/electric-storm.png'); }
+#destThemeIcon.moonwithstormIcon{ background-image:url('../../../res/10inch/night/dest/electric-storm_night.png'); }
+#destThemeIcon.moonwithsnowIcon{ background-image:url('../../../res/10inch/night/dest/snow_night.png'); }
+#destThemeIcon.snowIcon{ background-image:url('../../../res/10inch/night/dest/snow.png'); }
+#destThemeIcon.hailIcon{ background-image:url('../../../res/10inch/night/dest/hail.png'); }
+#destThemeIcon.sunnywithsnowIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-snow.png'); }
+#destThemeIcon.windIcon{ background-image:url('../../../res/10inch/night/dest/wind.png'); }
+#destThemeIcon.moonIcon{ background-image:url('../../../res/10inch/night/dest/moon.png'); }
+#destThemeIcon.moonwithcloudIcon{ background-image:url('../../../res/10inch/night/dest/moon-with-cloud.png'); }
+#destThemeIcon.hazywithmoonIcon{ background-image:url('../../../res/10inch/night/dest/hazy_night.png'); }
+#destThemeIcon.rainandsnowwithmoonIcon{ background-image:url('../../../res/10inch/night/dest/rain-and-snow.png'); }
+#destThemeIcon.foggywithmoonIcon{ background-image:url('../../../res/10inch/night/dest/foggy_night.png'); }
+#destThemeIcon.hailwithmoonIcon{ background-image:url('../../../res/10inch/night/dest/hail_night.png'); }
+
+/********Weather Destination Location On Arrival  Icons PNG***********/
+#destArriveThemeIcon.sunnyIcon{ background-image:url('../../../res/10inch/night/dest/sunny.png'); }
+#destArriveThemeIcon.sunnywithcloudIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-cloud.png'); }
+#destArriveThemeIcon.hazyIcon{ background-image:url('../../../res/10inch/night/dest/hazy.png'); }
+#destArriveThemeIcon.overcastIcon{ background-image:url('../../../res/10inch/night/dest/overcast.png'); }
+#destArriveThemeIcon.sunnywithrainIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-rain.png'); }
+#destArriveThemeIcon.iceIcon{ background-image:url('../../../res/10inch/night/dest/ice.png'); }
+#destArriveThemeIcon.rainwithsnowIcon{ background-image:url('../../../res/10inch/night/dest/rain-with-snow.png'); }
+#destArriveThemeIcon.foggyIcon{ background-image:url('../../../res/10inch/night/dest/foggy.png'); }
+#destArriveThemeIcon.rainIcon{ background-image:url('../../../res/10inch/night/dest/rain.png'); }
+#destArriveThemeIcon.moonwithrainIcon{ background-image:url('../../../res/10inch/night/dest/moon-with-rain.png'); }
+#destArriveThemeIcon.electricstormIcon{ background-image:url('../../../res/10inch/night/dest/electric-storm.png'); }
+#destArriveThemeIcon.moonwithstormIcon{ background-image:url('../../../res/10inch/night/dest/electric-storm_night.png'); }
+#destArriveThemeIcon.moonwithsnowIcon{ background-image:url('../../../res/10inch/night/dest/snow_night.png'); }
+#destArriveThemeIcon.snowIcon{ background-image:url('../../../res/10inch/night/dest/snow.png'); }
+#destArriveThemeIcon.hailIcon{ background-image:url('../../../res/10inch/night/dest/hail.png'); }
+#destArriveThemeIcon.sunnywithsnowIcon{ background-image:url('../../../res/10inch/night/dest/sunny-with-snow.png'); }
+#destArriveThemeIcon.windIcon{ background-image:url('../../../res/10inch/night/dest/wind.png'); }
+#destArriveThemeIcon.moonIcon{ background-image:url('../../../res/10inch/night/dest/moon.png'); }
+#destArriveThemeIcon.moonwithcloudIcon{ background-image:url('../../../res/10inch/night/dest/moon-with-cloud.png'); }
+#destArriveThemeIcon.hazywithmoonIcon{ background-image:url('../../../res/10inch/night/dest/hazy_night.png'); }
+#destArriveThemeIcon.rainandsnowwithmoonIcon{ background-image:url('../../../res/10inch/night/dest/rain-and-snow.png'); }
+#destArriveThemeIcon.foggywithmoonIcon{ background-image:url('../../../res/10inch/night/dest/foggy_night.png'); }
+#destArriveThemeIcon.hailwithmoonIcon{ background-image:url('../../../res/10inch/night/dest/hail_night.png'); }
+
+/********Weather forecast screen icon***********/
+#Hourly ul li:first-child i{ background : url('../../../res/10inch/night/hourlyicon.png') no-repeat 50%; }
+#Hourly ul li:last-child i{ background : url('../../../res/10inch/night/5day.png') no-repeat 50.95% 49.10%
+; }
+#Hourly ul li:after, .favLineSeperator:after { background: url('../../../res/10inch/night/linesep_vertical.png') repeat-y }
+
+
+
+.hourlyIcon i.sunnyIcon, .daysIcon i.sunnyIcon { background-image:url('../../../res/10inch/night/hourly/sunny.png'); }
+.hourlyIcon i.sunnywithcloudIcon, .daysIcon i.sunnywithcloudIcon{ background-image:url('../../../res/10inch/night/hourly/sunny-with-cloud.png'); }
+.hourlyIcon i.hazyIcon, .daysIcon i.hazyIcon{ background-image:url('../../../res/10inch/night/hourly/hazy.png'); }
+.hourlyIcon i.overcastIcon, .daysIcon i.overcastIcon{ background-image:url('../../../res/10inch/night/hourly/overcast.png'); }
+.hourlyIcon i.sunnywithrainIcon, .daysIcon i.sunnywithrainIcon{ background-image:url('../../../res/10inch/night/hourly/suuny-with-rain.png'); }
+.hourlyIcon i.iceIcon, .daysIcon i.iceIcon{ background-image:url('../../../res/10inch/night/hourly/ice.png'); }
+.hourlyIcon i.rainwithsnowIcon, .daysIcon i.rainwithsnowIcon{ background-image:url('../../../res/10inch/night/hourly/rain-with-snow.png'); }
+.hourlyIcon i.foggyIcon, .daysIcon i.foggyIcon{ background-image:url('../../../res/10inch/night/hourly/foggy.png'); }
+.hourlyIcon i.rainIcon, .daysIcon i.rainIcon{ background-image:url('../../../res/10inch/night/hourly/rain.png'); }
+.hourlyIcon i.moonwithrainIcon, .daysIcon i.moonwithrainIcon{ background-image:url('../../../res/10inch/night/hourly/moonwithrain.png'); }
+.hourlyIcon i.electricstormIcon, .daysIcon i.electricstormIcon{ background-image:url('../../../res/10inch/night/hourly/electric-storm.png'); }
+.hourlyIcon i.moonwithstormIcon, .daysIcon i.moonwithstormIcon{ background-image:url('../../../res/10inch/night/hourly/electric-storm_night.png'); }
+.hourlyIcon i.moonwithsnowIcon, .daysIcon i.moonwithsnowIcon{ background-image:url('../../../res/10inch/night/hourly/snow_night.png'); }
+.hourlyIcon i.snowIcon, .daysIcon i.snowIcon{ background-image:url('../../../res/10inch/night/hourly/snow.png'); }
+.hourlyIcon i.hailIcon, .daysIcon i.hailIcon{ background-image:url('../../../res/10inch/night/hourly/hail.png'); }
+.hourlyIcon i.sunnywithsnowIcon, .daysIcon i.sunnywithsnowIcon{ background-image:url('../../../res/10inch/night/hourly/sunny-with-snow.png'); }
+.hourlyIcon i.windIcon, .daysIcon i.windIcon{ background-image:url('../../../res/10inch/night/hourly/wind.png'); }
+.hourlyIcon i.moonIcon, .daysIcon i.moonIcon{ background-image:url('../../../res/10inch/night/hourly/moon.png'); }
+.hourlyIcon i.moonwithcloudIcon, .daysIcon i.moonwithcloudIcon{ background-image:url('../../../res/10inch/night/hourly/moon-with-cloud.png'); }
+.hourlyIcon i.hazywithmoonIcon, .daysIcon i.hazywithmoonIcon{ background-image:url('../../../res/10inch/night/hourly/hazy_night.png'); }
+.hourlyIcon i.rainandsnowwithmoonIcon, .daysIcon i.rainandsnowwithmoonIcon{ background-image:url('../../../res/10inch/night/hourly/snowwithrain.png'); }
+.hourlyIcon i.foggywithmoonIcon, .daysIcon i.foggywithmoonIcon{ background-image:url('../../../res/10inch/night/hourly/foggy_night.png'); }
+.hourlyIcon i.hailwithmoonIcon, .daysIcon i.hailwithmoonIcon{ background-image:url('../../../res/10inch/night/hourly/hail_night.png'); }
+
+
+
+.daysIcon i{  background: url('../../../res/10inch/night/dest/sunny-with-rain.png') no-repeat 50%;  }
+
+/********legal icon***********/
+.legal-intro .legal-intro-message {
+    color: #FFF;
+}
+.continue-button:after, .continue-button:before {
+    background-image: url('../../../res/10inch/night/linesep_horizontal.png');
+}
+
+/********search list***********/
+.list .province {
+    color: #b1b1b1;
+}
+.list .loc-fahren, .content_right .maxTemp{
+    color: #b3b3b3;   
+}
+
+.content_left_dest_bg{
+    background: url('../../../res/10inch/night/gradient-image.png') no-repeat 0px 12px;
+}
+.content_right_dest_bg{
+    background: url('../../../res/10inch/night/gradient-image.png') no-repeat 0px 12px;
+    margin-left: 8px;
+}

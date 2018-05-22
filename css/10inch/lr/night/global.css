@@ -1,0 +1,56 @@
+@import url("../../icons/nightIcon.css");
+
+body:after {
+    content: url('../../../../res/title_night_theme_10.jpg') url('../../../../res/bg/Foggy_Dark_Theme.jpg') url('../../../../res/bg/Hazy_Dark_Theme.jpg') url('../../../../res/bg/Icy_Dark_Theme.jpg') url('../../../../res/bg/Windy_Dark_Theme.jpg') url('../../../../res/bg/Snow_Dark_Theme.jpg') url('../../../../res/bg/Rain_Dark_Theme.jpg') url('../../../../res/bg/Sunny_Dark_Theme.jpg') url('../../../../res/bg/ClearNight_Dark_Theme.jpg') url('../../../../res/bg/SunnyCloud_Dark_Theme.jpg') url('../../../../res/bg/Overcast_Dark_Theme.jpg') url('../../../../res/bg/Lightning_Dark_Theme.jpg') url('../../../../res/bg/MoonCloud_Dark_Theme.jpg') url('../../../../res/bg/MoonHazy_Dark_Theme.jpg') url('../../../../res/bg/Hail_Dark_Theme.jpg');
+}
+
+.reaction-area.active, .tabreaction-area.active {
+    background-image: url('../../../../res/10inch/night/lr/button_reaction_state.png');
+}
+.my-location.selected div, .favourite.selected div, .destination.selected div,.search.selected div, #twentyFourHourTab.selected div, #fiveDayTab.selected div{
+    background-image: url('../../../../res/10inch/night/lr/lr_night_selected.png');
+}
+.reaction-area.active, .my-location.selected div, .favourite.selected div, .destination.selected div {
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+.icon.active, .favIcons, .icon:active {
+    background: url('../../../../res/10inch/lr_icon_glow.png');
+}
+.active-element .reaction-area, .reaction-area.active, #fav-list .active-element {
+    background-image: url('../../../../res/10inch/night/lr/button_reaction_state.png');
+}
+.scroll-container .chevron-up, .scroll-container .searchListChevron-up  {
+    background-image: url('../../../../res/10inch/night/arrow_up.png');
+}
+.chevron-up.active-icon, .searchListChevron-up.active-icon {
+    background-image: url('../../../../res/10inch/night/lr/arrow_up_active.png');
+}
+.at-top .chevron-up, .at-top .searchListChevron-up {
+    background-image: url('../../../../res/10inch/night/arrow_up_inactive.png');
+}
+.scroll-container .chevron-down {
+    background-image: url('../../../../res/10inch/night/arrow_down.png');
+}
+.chevron-down.active-icon {
+    background-image: url('../../../../res/10inch/night/lr/arrow_down_active.png');
+}
+.at-bottom .chevron-down {
+    background-image: url('../../../../res/10inch/night/arrow_down_inactive.png');
+}
+.scroll-container .list::-webkit-scrollbar-thumb:vertical,
+.scroll-container .legal-information::-webkit-scrollbar-thumb:vertical {
+    background: url('../../../../res/scroll_thumb_lr_top.png') top left no-repeat, url('../../../../res/scroll_thumb_lr_bottom.png') bottom left no-repeat;
+    background-color: #ff6808;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+}
+
+/*Search list*/
+.search-title,.search-title, .changeRain .changeRainValue, .cloudDetail .cloudDetailValue, .visDetail .visDetailValue, .updateTxt_dest span {
+    color: rgb(255,177,128);
+}
+.rotate:active,
+.rotate.active  {
+    background: none;
+}

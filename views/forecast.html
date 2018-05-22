@@ -1,0 +1,344 @@
+<!--
+*File Name: forecast.html
+*Description: Weather forecast screen
+
+*Copyright (c) 2018: Jaguar Land Rover
+*Authors: Prabhakaran Raja
+*Creation Date: 30 Jan, 2018
+*Modification Records:
+-->
+
+<div class="wt-info screen">
+    <!-- HEADER -->
+    <div class="header forecast-lineseprator">
+		<div id="forcastRefIcon" class="icon update" style="display:none" onmousedown="WT.Global.clickLocationRefreshIcon()"></div>
+        <div id="Hourly" class="">
+            <ul>
+                <li id="twentyFourHourTab" class="tablinks" onmouseup="WT.Global.fetchForcast(WT.Constant.Route.FORECAST.tabTwentyFour)"><div class="tabreaction-area"><i></i></div></li>
+                <li id="fiveDayTab" class="tablinks" onmouseup="WT.Global.fetchForcast(WT.Constant.Route.FORECAST.tabFiveDay)" ><div class="tabreaction-area"><i></i></div></li>
+            </ul>
+        </div>	
+        <div id="forecastlocation-name" class="locationName">
+            <span></span>
+        </div>
+        <div id="favIcon" class="icon nonfav" onmouseup="WT.Global.clickFavIcon(this)" ><i></i></div>	  
+    </div>
+    <div class="sliding-holder">
+        <div class="sliding-container">
+            <!-- Twenty Four Hour Tab  -->
+            <div id="twentyFourHour">  
+                <div class="twentyFourHourlist">
+                    <ul id="twentyFourHourColumn">
+                        <!-- Twenty Four Hour First Tab  -->
+                        <li class="tfhColoumFirst" onclick="WT.Forecastdetail.click24hrFirstTab()">
+
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i ><span></span></i></div>
+                            </div>
+
+                            <div class="border"></div>
+                            <div class="coloum_right" style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div>	
+                        </li>
+                        <!-- Twenty Four Hour Second Tab  -->
+                        <li class="tfhColoumSecond" onclick="WT.Forecastdetail.click24hrSecondTab()">
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i><span></span></i></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Twenty Four Hour Third Tab  -->
+                        <li class="tfhColoumThird" onclick="WT.Forecastdetail.click24hrThirdTab()">
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i><span></span></i></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Twenty Four Hour Fourth Tab  -->
+                        <li class="tfhColoumFour" onclick="WT.Forecastdetail.click24hrFourthTab()">
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i><span></span></i></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Twenty Four Hour Fifth Tab  -->
+                        <li class="tfhColoumFive" onclick="WT.Forecastdetail.click24hrFifthTab()">
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i><span></span></i></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div>  
+                        </li>
+                        <!-- Twenty Four Hour Sixth Tab  -->
+                        <li class="tfhColoumSix" onclick="WT.Forecastdetail.click24hrSixthTab()">
+                            <div class="coloum_left">
+                                <div class="timePeriod"><span></span></div>
+                                <div class="hourlyIcon"><i></i></div>
+                                <div class="tempIcon"><i><span></span></i></div>
+                                <div class="windDirection"><i><span></span></i></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxt"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxt"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxt"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Five Day Tab  -->
+            <div id="fiveDay">
+                <div class="fiveDaylist">
+                    <ul id="fiveDayColumn">
+                        <!-- Five Day First Tab  -->
+                        <li class="fiveDayFirstColoum" onclick="WT.Forecastdetail.clickFiveDayFirstTab()">
+                            <div class="coloum_left">
+                                <div class="days"><span></span></div>
+                                <div class="daysIcon"><i></i></div> 
+                                <div class="daysTemp"><span></span></div>
+                                <div class="windDir"><span></span></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxtFiveDay"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxtFiveDay"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxtFiveDay"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                            </div>	
+                        </li>
+                        <!-- Five Day Second Tab  -->
+                        <li class="fiveDaySecondColoum" onclick="WT.Forecastdetail.clickFiveDaySecondTab()">
+                            <div class="coloum_left">
+                                <div class="days"><span></span></div>
+                                <div class="daysIcon"><i></i></div> 
+                                <div class="daysTemp"><span></span></div>
+                                <div class="windDir"><span></span></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxtFiveDay"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxtFiveDay"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxtFiveDay"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                            </div>	 
+                        </li>
+                        <!-- Five Day Third Tab  -->
+                        <li class="fiveDayThirdColoum" onclick="WT.Forecastdetail.clickFiveDayThirdTab()">
+                            <div class="coloum_left">
+                                <div class="days"><span></span></div>
+                                <div class="daysIcon"><i></i></div> 
+                                <div class="daysTemp"><span></span></div>
+                                <div class="windDir"><span></span></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxtFiveDay"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxtFiveDay"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxtFiveDay"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                            </div>	 
+                        </li>
+                        <!-- Five Day Fourth Tab  -->
+                        <li class="fiveDayFourthColoum" onclick="WT.Forecastdetail.clickFiveDayFourthTab()">
+                            <div class="coloum_left">
+                                <div class="days"><span></span></div>
+                                <div class="daysIcon"><i></i></div> 
+                                <div class="daysTemp"><span></span></div>
+                                <div class="windDir"><span></span></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxtFiveDay"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxtFiveDay"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxtFiveDay"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                            </div>  
+                        </li>
+                        <!-- Five Day Fifth Tab  -->
+                        <li class="fiveDayFifthColoum" onclick="WT.Forecastdetail.clickFiveDayFifthTab()">
+                            <div class="coloum_left">
+                                <div class="days"><span></span></div>
+                                <div class="daysIcon"><i></i></div> 
+                                <div class="daysTemp"><span></span></div>
+                                <div class="windDir"><span></span></div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="coloum_right"  style="display: none">
+                                <div class="tempTitle">
+                                    <span></span>
+                                </div>
+                                <div class="changeRain">
+                                    <span class="changeRainTxtFiveDay"></span>
+                                    <span class="changeRainValue"></span>
+                                </div>
+                                <div class="cloudDetail">
+                                    <span class="cloudDetailTxtFiveDay"></span>
+                                    <span class="cloudDetailValue"></span>
+                                </div>
+                                <div class="visDetail">
+                                    <span class="visDetailTxtFiveDay"></span>
+                                    <span class="visDetailValue"></span>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>	
+            </div>
+        </div>
+    </div>
+</div>
